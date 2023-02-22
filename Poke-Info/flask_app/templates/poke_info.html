@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ url_for('index') }}"><h4>&#x2302; Home</h4></a>
+<h3>{{ "Name" }}</h3>
+<p>{{ pokes_info['name'].capitalize() }}</p>
+<h3>{{ "Height" }}</h3>
+<p>{{ pokes_info['height'] }}</p>
+<h3>{{ "Weight" }}</h3>
+<p>{{ pokes_info['weight'] }}</p>
+<h3>{{ "Base Exp" }}</h3>
+<p>{{ pokes_info['base_exp'] }}</p>
+<h3>{{ "Moves" }}</h3>
+<p>{{ ', '.join(pokes_info['moves']) }}</p>
+<h3>{{ "Abilities" }}</h3>
+{% for ability in pokes_info['abilities']: %}
+    <a href="{{ url_for('pokemon_with_ability', ability_name=ability) }}"><p>{{ ability.capitalize() }}</p></a>
+{% endfor %}<br>
+{% endblock %}

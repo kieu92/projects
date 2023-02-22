@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="{{ url_for('index') }}"><h4>&#x2302; Home</h4></a>
+<h2>Pokemon with {{ ability.capitalize() }}</h2>
+{% for poke in pokes_with_ability: %}
+    <a href="{{ url_for('pokemon_info', pokemon_name=poke) }}"><h3>{{ poke.capitalize() }}</h3></a>
+{% endfor %}
+{% endblock %}
