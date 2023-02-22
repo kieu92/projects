@@ -1,0 +1,111 @@
+/* You implement */
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    width: 47.5rem;
+    height: 50rem;
+    border: 0.5rem solid green;
+}
+
+#d1 {
+    width: 47.5rem;
+    height: 44rem;
+    background-image: url(./images/JimHenson.jpg);
+    background-size: cover; /* Try cover, auto auto */
+    background-repeat: no-repeat; /* Try repeat-y, no-repeat, repeat */
+    background-attachment: scroll; /* Try scroll */
+    background-position: top left; /* Try top, right, bottom, left */
+}
+
+#p1 {
+    position: absolute;
+    top: -1.5rem;
+    left: 1.5rem;
+    font-size: 3rem;
+    color: azure;
+    background-color: rgba(0, 0, 0, .4);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#p2 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 16rem;
+    left: 16rem;
+    background-color: rgb(211,211,211, 0.8);
+    border: 0.2rem solid black;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+#p3 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 6rem;
+    left: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 0.5rem solid azure;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+a {
+    color: brown;
+}
+
+a:visited {
+	color: beige;
+}
+
+#p2:hover {
+    font-size: 1.375rem;
+    top: 16.125rem;
+    left: 16.125rem;
+}
+
+#footer {
+	font-size: 1.25rem;
+    background-color: lightblue;
+    padding: 0.5rem;
+    height: 5rem;
+    font-style: italic;
+}
+
+#footer div{
+    border: 0.75rem ridge silver;
+    background-color: red;
+    text-align: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    height: 2rem;
+}
+
+#footer a {
+    color: beige;
+}
+
+#footer:hover {
+	font-size: 1.125rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[list],
+input[type="number"] {
+    border: 0.25rem solid red;
+}
+
+.form-button {
+	height: 2.5rem;
+	width: 7.5rem;
+    margin-right: .75rem;
+    border-radius: 7.5px; 
+    border: double 2px black;
+    outline: solid 1px black;
+}

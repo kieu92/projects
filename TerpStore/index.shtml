@@ -1,0 +1,26 @@
+<!-- You implement -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terp Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="d1">
+        <p id="p1">
+            Terp Store
+        </p>
+
+        <p id="p2">
+            <a href="catalogInquiry.shtml">Catalog Inquiry</a><br>
+            <a href="placingOrder.shtml">Placing Order</a>
+        </p>
+    </div>
+
+    <!--#include virtual="footer.shtml" -->
+
+</body>
+</html>
