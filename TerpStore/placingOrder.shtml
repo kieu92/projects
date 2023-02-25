@@ -18,15 +18,24 @@
         <form id="p3" action="./processing/placingOrder.php" method="post">
             <label>
                 <u>Item Serial #</u> 
-                <input type="text" name="serialNumber" placeholder="umd-item-0000" required/>
+                <input type="text" name="serialNumber" placeholder="umd-item-0000" required>
             </label><br><br>
             
             <label>
                 <u>Credit Card #</u> 
                 <input type="text" name="cc1" maxlength="4" size="4" required> -
+            </label>
+                
+            <label>
                 <input type="text" name="cc2" maxlength="4" size="4" required> -
+            </label>
+                
+            <label>
                 <input type="text" name="cc3" maxlength="4" size="4" required> -
-                <input type="text" name="cc4" maxlength="4" size="4" required> 
+            </label>
+
+            <label>
+                <input type="text" name="cc4" maxlength="4" size="4" required>
             </label><br><br>
 
             <label>

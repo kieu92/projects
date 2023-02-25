@@ -30,7 +30,7 @@
             
             <label>
                 <u>Maximum Cost ($)</u> 
-                <input type="number" name="maximumCost" min="1" max="1000" step="5" required>
+                <input type="number" name="maximumCost" min="1" max="1000" step="5" value="1" required>
             </label><br><br>
 
             <label>
@@ -50,7 +50,7 @@
 
             <label>
                 <u>Contact Email Address:</u> 
-                <input type="email" name="email" size="30" placeholder="example@terpmail.umd.edu" required>
+                <input type="email" name="email" size="30" placeholder="example@terpmail.umd.edu">
             </label><br><br>
 
             <input class="form-button" type="submit" value="Submit Inquiry">

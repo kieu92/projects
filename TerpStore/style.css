@@ -11,8 +11,8 @@ body {
 }
 
 #d1 {
-    width: 47.5rem;
     height: 44rem;
+    width: 47.5rem;
     background-image: url(./images/JimHenson.jpg);
     background-size: cover; /* Try cover, auto auto */
     background-repeat: no-repeat; /* Try repeat-y, no-repeat, repeat */
@@ -34,12 +34,14 @@ body {
 #p2 {
     font-size: 1.5rem;
     position: absolute;
-    top: 16rem;
-    left: 16rem;
+    top: 20.25rem;
+    left: 15.75rem;
     background-color: rgb(211,211,211, 0.8);
     border: 0.2rem solid black;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    width: 16rem;
+    height: 3.5rem;
+    text-align: center;
+    margin: auto;
 }
 
 #p3 {
@@ -59,25 +61,23 @@ a {
     color: brown;
 }
 
+a:hover {
+    font-size: 1.375rem;
+}
+
 a:visited {
 	color: beige;
 }
 
-#p2:hover {
-    font-size: 1.375rem;
-    top: 16.125rem;
-    left: 16.125rem;
-}
-
-#footer {
-	font-size: 1.25rem;
+footer {
+	font-size: 1.5rem;
     background-color: lightblue;
     padding: 0.5rem;
     height: 5rem;
     font-style: italic;
 }
 
-#footer div{
+footer div {
     border: 0.75rem ridge silver;
     background-color: red;
     text-align: center;
@@ -86,19 +86,15 @@ a:visited {
     height: 2rem;
 }
 
-#footer a {
-    color: beige;
-}
-
-#footer:hover {
-	font-size: 1.125rem;
-}
-
 input[type="text"],
 input[type="email"],
 input[list],
 input[type="number"] {
     border: 0.25rem solid red;
+}
+
+input[class="form-button"]:hover {
+    border: solid 2px blue;
 }
 
 .form-button {
