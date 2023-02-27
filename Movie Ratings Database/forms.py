@@ -3,7 +3,7 @@ from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import InputRequired, Length
 
 class SearchForm(FlaskForm):
-    search_query = StringField('Search Query', validators=[InputRequired(), Length(min=1, max=30)])
+    search_query = StringField('Search', validators=[InputRequired(), Length(min=1, max=30)])
     submit = SubmitField('Submit')
 
 class MovieReviewForm(FlaskForm):

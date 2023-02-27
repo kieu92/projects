@@ -23,10 +23,6 @@ mongo = PyMongo(app)
 
 client = MovieClient(os.environ.get('OMDB_API_KEY'))
 
-reviews = []
-for user in mongo.db.users.find():
-    reviews.append(user)
-
 # --- Do not modify this function ---
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -58,12 +54,11 @@ def movie_detail(movie_id):
                 'date': current_time()
             }
 
-            mongo.db.users.insert_one(review)
-            reviews.append(review)
+            mongo.db.reviews.insert_one(review)
 
-            return render_template('movie_detail.html', movie=movie, reviews=reviews, form=form)
+            return render_template('movie_detail.html', movie=movie, reviews=list(mongo.db.reviews.find({'imdb_id': movie_id})), form=form)
         
-        return render_template('movie_detail.html', movie=movie, reviews=reviews, form=form)
+        return render_template('movie_detail.html', movie=movie, reviews=list(mongo.db.reviews.find({'imdb_id': movie_id})), form=form)
     
     except Exception as e:
         return render_template('movie_detail.html', error_msg=e)
